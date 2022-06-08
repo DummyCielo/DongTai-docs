@@ -11,4 +11,4 @@ jobs:
     name: "Deploy Dongtai Docs"
     runs-on: ubuntu-latest
     steps:
-      - run: curl -X POST -d {} https://api.netlify.com/build_hooks/${{ secrets.DOCS_NETLIFY_BUILD_HOOK }}
+      - run: curl -X POST -d {} https://api.vercel.com/v1/integrations/deploy/${{ secrets.DONGTAI_Vercel_Deploy_KEY}}
